@@ -2,6 +2,7 @@
     font-family: "HankenGrotesk";
     src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
 }
+
 @font-face {
     font-family: "HankenGrotesk-Bold";
     src: url("../assets/fonts/static/HankenGrotesk-Bold.ttf");
@@ -36,17 +37,22 @@ body>div.wrapper {
     flex-direction: column;
 }
 
-/* summary section */
+/* result section */
+.result,
+.summary {
+    padding: 2rem;
+}
+
 .result {
     align-items: center;
     text-align: center;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(0, 0%, 100%);
-    padding: 2rem;
     border-radius: 20px;
 }
 
-.result>* {
+.result>*,
+.summary>* {
     margin-bottom: 2rem;
 }
 
@@ -82,4 +88,75 @@ body>div.wrapper {
     font-size: 1rem;
     width: 25ch;
     margin-bottom: 0;
+}
+
+/* summary section */
+.summary>p:first-child {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.summary .subject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: .7lh;
+    margin-bottom: .7lh;
+}
+
+.summary .subject>span:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.summary .subject>span:nth-child(2) {
+    margin-right: 2rem;
+    margin-left: .7lh;
+    flex: 1;
+}
+
+/* hsl(224, 30%, 27%) */
+.summary .subject>span:last-child {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+}
+
+.summary .subject>span:last-child>span:first-child {
+    color: black;
+}
+
+.summary>button {
+    color: hsl(0, 0%, 100%);
+    padding: 1lh;
+    font-weight: 700;
+    border: none;
+    border-radius: 2em;
+    background-color: hsl(224, 30%, 27%);
+}
+
+.summary>button:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* colors */
+.light-red {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.orange-yellow {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.green-teal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.cobalt-blue {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
 }
