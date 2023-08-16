@@ -56,6 +56,11 @@ body>div.wrapper {
     margin-bottom: 2rem;
 }
 
+.result>:first-child,
+.result :last-child {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .result>div {
     display: flex;
     flex-direction: column;
@@ -166,16 +171,20 @@ body>div.wrapper {
     .result>p:last-child {
         width: 30ch;
     }
+
     .result>div {
         width: 11rem;
         height: 11rem;
     }
+
     .summary-component {
         width: 100vw;
         min-width: 300px;
         flex-direction: column;
-    } 
-    .summary .subject, .summary button {
+    }
+
+    .summary .subject,
+    .summary button {
         padding-top: 1.5em;
         padding-bottom: 1.5em;
     }
