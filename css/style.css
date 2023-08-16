@@ -106,8 +106,8 @@ body>div.wrapper {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    padding: .7lh;
-    margin-bottom: .7lh;
+    padding: .7em;
+    margin-bottom: .7em;
 }
 
 .summary .subject>span:first-child {
@@ -117,7 +117,7 @@ body>div.wrapper {
 
 .summary .subject>span:nth-child(2) {
     margin-right: 2rem;
-    margin-left: .7lh;
+    margin-left: .7em;
     flex: 1;
 }
 
@@ -133,7 +133,7 @@ body>div.wrapper {
 
 .summary>button {
     color: hsl(0, 0%, 100%);
-    padding: 1lh;
+    padding: 1em;
     font-weight: 700;
     border: none;
     border-radius: 2em;
