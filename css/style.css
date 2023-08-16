@@ -160,3 +160,23 @@ body>div.wrapper {
     color: hsl(234, 85%, 45%);
     background-color: hsla(234, 85%, 45%, 0.1);
 }
+
+/* adjustments for small screen  */
+@media only screen and (max-width: 600px) {
+    .result>p:last-child {
+        width: 30ch;
+    }
+    .result>div {
+        width: 11rem;
+        height: 11rem;
+    }
+    .summary-component {
+        width: 100vw;
+        min-width: 300px;
+        flex-direction: column;
+    } 
+    .summary .subject, .summary button {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+}
